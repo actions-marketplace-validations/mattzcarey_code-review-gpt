@@ -41,8 +41,11 @@ jobs:
                       "command": "npx",
                       "args": ["-y", "@upstash/context7-mcp"]
                   }
+                  "grep": {
+                    "url": "https://mcp.grep.app"
+                  }
               }
             }
-          allowed_tools: "Bash(bun review),Bash(bun run),Bash(bun test),Bash(bun test:unit),Bash(bun check),Bash(bun check:fix),Bash(bun run build),mcp__context7__resolve-library-id,mcp__context7__get-library-docs"
+          allowed_tools: "Bash(*),Bash(bun install),Bash(bun review),Bash(bun run),Bash(bun test),Bash(bun test:unit),Bash(bun check),Bash(bun check:fix),Bash(bun run build),mcp__context7__resolve-library-id,mcp__context7__get-library-docs"
           custom_instructions: |
             "Shippie is an automated code review and QA tool which runs in a CI/CD pipeline. It is a CLI tool build with typescript and bun. It uses the AI SDK by Vercel and Model Context Protocol for external tools."
