@@ -1,9 +1,12 @@
 node_modules
+.idea
 .env
 dist
 **/.cache/*.ts
 !jest.config.js
 *.d.ts
+
+**/data
 
 cdk.context.json
 
@@ -19,3 +22,6 @@ cdk.context.json
 .cdk.staging
 cdk.out/
 cdk.context.json
+
+# PEM
+*.pem
